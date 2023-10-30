@@ -1,0 +1,150 @@
+<mvc:View
+    controllerName="com.mindset.apps.project6.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <HBox width="100%">
+            <VBox class="customVBox">
+                <Label text="Name" />
+                <Text text="{/copiedJSON/name}" />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label text="Age" />
+                <Text text="{/copiedJSON/age}" />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label text="Address" />
+                <Text text="{/copiedJSON/address}" />
+
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label text="Phone Number" />
+                <Text text="{/copiedJSON/phoneNumber}" />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label text="Email" />
+                <Text text="{/copiedJSON/email}" />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label text="Hobbies" />
+                <List items="{/copiedJSON/hobbies}">
+                    <items>
+                        <StandardListItem title="{}" />
+                    </items>
+                </List>
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <VBox class="educationVBox">
+                    <Label text="Education" />
+                    <Label text="High School" />
+                    <Text text="{/copiedJSON/education/highSchool}" />
+                    <l:VerticalLayout height="1rem" />
+                    <!-- Add margin -->
+
+                    <Label text="College" />
+                    <Text text="{/copiedJSON/education/college}" />
+                </VBox>
+                <l:VerticalLayout height="1rem" />
+            </VBox>
+
+            <VBox class="customVBox">
+                <Label id = "inputNameLabel" text="Name" />
+                <Input
+                    id="inputName"
+                    placeholder="Enter Name"
+                    change="handleChange"
+                    ariaLabelledBy="inputNameLabel"
+                />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label id = "inputAgeLabel" text="Age" />
+                <Input
+                    id="inputAge"
+                    placeholder="Enter Age"
+                    type="Number"
+                    change="handleChange"
+                    ariaLabelledBy="inputAgeLabel"
+                />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label id = "inputAddressLabel" text="Address" />
+                <Input
+                    id="inputAddress"
+                    placeholder="Enter Address"
+                    change="handleChange"
+                    ariaLabelledBy="inputAddressLabel"
+                />
+
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label id = "inputPhoneLabel" text="Phone Number" />
+                <Input
+                    id="inputPhone"
+                    placeholder="Enter Mobile No"
+                    change="handleChange"
+                    ariaLabelledBy="inputPhoneLabel"
+                />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label id = "inputEmailLabel" text="Email" />
+                <Input
+                    id="inputEmail"
+                    placeholder="Enter Email"
+                    change="handleChange"
+                    type="Email"
+                    ariaLabelledBy="inputEmailLabel"
+                />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <Label id = "inputHobbiesLabel" text="Hobbies" />
+                <Input
+                    id="inputHobbies"
+                    placeholder="Enter text"
+                    change="handleChange"
+                    ariaLabelledBy="inputHobbiesLabel"
+                />
+                <l:VerticalLayout height="1rem" />
+                <!-- Add margin -->
+
+                <VBox class="educationVBox">
+                    <Label text="Education" />
+                    <Label id = "inputEducationLabel" text="High School" />
+                    <Input
+                        id="inputSchool"
+                        placeholder="Enter text"
+                        change="handleChange"
+                        ariaLabelledBy="inputTextLabel"
+                    />
+                    <l:VerticalLayout height="1rem" />
+                    <!-- Add margin -->
+
+                    <Label id = "inputCollegeLabel" text="College" />
+                    <Input
+                        id="inputCollege"
+                        placeholder="Enter text"
+                        change="handleChange"
+                        ariaLabelledBy="inputCollegeLabel"
+                    />
+                </VBox>
+                <l:VerticalLayout height="1rem" />
+            </VBox>
+        </HBox>
+    </Page>
+</mvc:View>

@@ -1,0 +1,15 @@
+{
+  "masterJSON": {
+      "name": "John Doe",
+      "age": 30,
+      "address": "1234 Main St Sample City 12345",
+      "phoneNumber": "555-123-4567",
+      "email": "johndoe@example.com",
+      "hobbies": ["Reading", "Hiking"],
+      "education": {
+          "highSchool": "Sample High School",
+          "college": "Sample College"
+      }
+  }
+  
+}

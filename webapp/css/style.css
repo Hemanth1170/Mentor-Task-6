@@ -1,0 +1,17 @@
+/* Enter your custom styles here */
+/* Add these styles to your CSS or inline style definitions */
+.customVBox {
+    background-color: white;
+    padding: 16px;
+    width: 50%;
+    margin-right: 10px;
+  }
+  
+  .addressVBox {
+    margin-top: 16px; /* Add a top margin to create a gap */
+  }
+  
+  .educationVBox {
+    margin-top: 16px; /* Add a top margin to create a gap */
+  }
+  
